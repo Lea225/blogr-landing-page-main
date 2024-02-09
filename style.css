@@ -1,0 +1,316 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Overpass',sans-serif;
+}
+h2,h3,h5{
+    color: hsl(208, 49%, 24%);
+    font-family: 'Overpass',sans-serif;
+}
+h4,h6{
+    color: hsl(0, 0%, 100%);
+}
+p{
+    color: hsl(207, 13%, 34%);
+}
+p,a,option{
+    font-family: 'Ubuntu',sans-serif;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+section,footer{
+    padding: 50px 50px 0 100px;
+}
+header div{
+    display: flex;
+}
+select{
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    color: hsl(0, 0%, 100%);
+    background-color: transparent;
+}
+option{
+    padding: 10px 50px;
+    color: hsl(237, 17%, 21%);
+}
+option:hover{
+    font-weight: bold;
+}
+.sign-up{
+    margin-left: 20px;
+}
+.sign-up:hover,.cta-1:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+.sign-up,.cta-1,.cta-2,#cta-4{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign-up,.cta-1{
+    color: hsl(356, 100%, 66%);
+    background-color: hsl(0, 0%, 100%);
+}
+.cta-2:hover{
+    color: hsl(356, 100%, 66%);
+    background-color: hsl(0, 0%, 100%);
+}
+.cta-1{
+    margin-right: 20px;
+}
+.cta-2{
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: transparent;
+}
+#icon-hamburger,#icon-close,.mobile-menu{
+    display: none;
+}
+h1{
+    font-size: 3em;
+    margin-top: 10%;
+}
+.first-section p{
+    margin-bottom: 5%;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+.first-section{
+    height: 75vh;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(353, 100%, 62%);
+    border-radius: 0 0 0 100px;
+    background-position: center;
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+    background-image: url('images/bg-pattern-intro-desktop.svg');
+}
+h2{
+    text-align: center;
+}
+.second-section main{
+    display: flex;
+    padding-right: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-section img{
+    height: 80vh;
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: relative;
+    left: 40%;
+}
+.second-section p{
+    width: 75%;
+}
+.third-section{
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 100px 0 100px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50%, cover;
+    background-color: hsl(237, 17%, 21%);
+    background-image: url('images/bg-pattern-circles.svg');
+}
+.third-section img{
+    height: 75vh;
+}
+.third-section p{
+    color: hsla(0, 0%, 100%, 0.7);
+}
+h5{
+    font-size: 1.1em;
+}
+.fourth-section main{
+    margin-right: 8%;
+}
+.fourth-section{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourth-section img{
+    position: relative;
+    left: -45%;
+    height: 80vh;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+h6{
+    font-size: 1em;
+}
+footer img{
+    margin-top: 3%;
+    height: 5vh;
+}
+footer nav a{
+    padding-bottom: 10px;
+    color: hsl(240, 2%, 79%);
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 45vh;
+    display: flex;
+    border-radius: 0 70px 0 0;
+    justify-content: space-between;
+    background-color: hsl(240, 10%, 16%);
+}
+@media screen and (max-width: 1000px) {
+    body{
+        max-width: 80%;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        position: relative;
+        order: 2;
+        text-align: center;
+    }
+    section,footer{
+        left: 0;
+        right: 0;
+        padding: 50px;
+    }
+    select,header nav{
+        display: none;
+    }
+    #icon-hamburger{
+        display: block;
+    }
+    .mobile-menu{
+        top: 3%;
+        z-index: 1;
+        left: 40%;
+        width: 60%;
+        padding: 30px;
+        display: flex;
+        position: absolute;
+        border-radius: 5px;
+        flex-direction: column;
+        box-shadow: 4px 6px 10px hsl(207, 13%, 34%,0.1);
+        background-color: hsl(0, 0%, 100%);
+    }
+    hr{
+        width: 100%;
+        border: 1px solid hsl(240, 2%, 79%);
+    }
+    .rotate {
+        transform: rotateX(180deg);
+    }
+    .mobile-menu a,.mobile-menu p{
+        font-family: 'Overpass',sans-serif;
+    }
+    .mobile-menu p{
+        font-weight: 600;
+        color: hsl(207, 13%, 34%, 0.8);
+    }
+    .mobile-menu a{
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-weight: bold;
+        color: hsl(208, 49%, 24%);
+    }
+    .mobile-menu nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-menu-div{
+        display: none;
+        padding: 10px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 5px;
+        background-color: hsl(240, 2%, 79%, 0.3);
+    }
+    .mobile-menu-div.show{
+        display: block;
+    }
+    .cta-3,#cta-4{
+        margin-top: 10%;
+        font-weight: bold;
+    }
+    #cta-4{
+        padding: 15px 20px;
+        color: hsl(0, 0%, 100%);
+        background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+    h1{
+        margin-top: 20%;
+        font-size: 2.5em;
+    }
+    p{
+        left: auto;
+        right: auto;
+        line-height: 1.5;
+    }
+    .second-section img,.fourth-section img{
+        position: relative;
+        left: auto; 
+        right: auto;
+        height: auto; 
+    }
+    .first-section,.second-section main,.third-section,.fourth-section,footer{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-section{
+        background-image: url('images/bg-pattern-intro-mobile.svg');
+    }
+    h2{
+        width: 100%;
+        margin-left: 20%;
+    }
+    .second-section main{
+        padding: 50px;
+        flex-direction: column-reverse;
+    }
+    .second-section p{
+        width: auto;
+    }
+    .first-section p{
+        margin-bottom: 15%;
+    }
+    .third-section{
+        background-size: 90%;
+        background-position: top center;
+    }
+    .third-section p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer{
+        display: block;
+        padding-bottom: 50px;
+    }
+}
